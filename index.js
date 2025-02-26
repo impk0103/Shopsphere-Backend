@@ -25,7 +25,7 @@ app.use((req, res, next) => {
 });
 app.use(cors(corsOptions));
 app.use(express.json();
-app.get('/', (req, res) => {
+app.get('', (req, res) => {
   res.send('Shopsphere Backend is Running!');
 });
 app.use("/", Routes);
