@@ -6,12 +6,6 @@ const Routes = require("./routes/route.js");
 
 dotenv.config(); // Load environment variables
 
-// Check if essential environment variables are set
-if (!process.env.AIRTABLE_API_KEY || !process.env.AIRTABLE_BASE_ID) {
-    console.error("❌ Missing Airtable API Key or Base ID in .env file!");
-    process.exit(1);
-}
-
 const app = express();
 const PORT = process.env.PORT || 5000;
 
