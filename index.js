@@ -20,7 +20,7 @@ app.use(express.json({ limit: "10mb" }));
 
 // Improved CORS: Restrict to specific origins for security
 const corsOptions = {
-    origin: process.env.FRONTEND_URL || "*", // Allow frontend domain or fallback to all
+    origin: process.env.FRONTEND_URL, // Allow frontend domain or fallback to all
     methods: "GET,POST,PUT,DELETE",
     allowedHeaders: ["Content-Type", "Authorization"]
 };
